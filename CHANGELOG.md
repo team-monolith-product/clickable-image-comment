@@ -4,6 +4,9 @@ All notable changes to the "clickable-image-comment" extension will be documente
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+### 1.0.0
 
-- Initial release
+Initial release with basic functionality:
+- Image path detection in comments
+- Clickable link conversion
+- Cross-platform path resolution
