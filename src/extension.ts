@@ -48,8 +48,8 @@ export function activate(context: vscode.ExtensionContext) {
 
           while ((match = IMAGE_RX.exec(text))) {
             const imgPath = match[1];
-            // http/https로 시작하는 URL은 건너뛰기
-            if (imgPath.match(/^https?:\/\//i)) {
+            // scheme이 존재하는 경우는 링크를 만들지 않음
+            if (imgPath.match(/^[a-zA-Z][a-zA-Z\d+\-.]*:/)) {
               continue;
             }
             const start = new vscode.Position(line, match.index);
