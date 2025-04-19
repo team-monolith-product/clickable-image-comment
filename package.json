@@ -1,6 +1,6 @@
 {
   "name": "clickable-image-comment",
-  "displayName": "clickable-image-comment",
+  "displayName": "Clickable Image Comment",
   "description": "Turn image paths in comments into clickable links",
   "version": "1.0.0",
   "publisher": "team-monolith",
