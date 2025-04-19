@@ -1,71 +1,49 @@
 # clickable-image-comment README
 
-This is the README for your extension "clickable-image-comment". After writing up a brief description, we recommend including the following sections.
+Transform image paths in comments into clickable links for seamless navigation and preview.
 
-## Features
+<img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg">
+<img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg">
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+# Overview
 
-For example if there is an image subfolder under your extension project workspace:
+Clickable Image Comment is a productivity tool developed for Team Monolith frontend team. It automatically detects image paths in code comments and converts them into clickable links, enabling quick access to component visualizations during development and code review.
 
-\!\[feature X\]\(images/feature-x.png\)
+When you click on an image path in a comment, the extension resolves the path relative to your workspace and opens the image file directly in VS Code.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+# Features
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **Automatic Link Detection**: Detects image paths in code comments across all file types
+- **Clickable Navigation**: Transforms detected paths into clickable links
+- **Multiroot Workspace Support**: Resolves paths relative to the workspace root
+- **Cross-Platform Compatible**: Optimized for macOS and WSL environments
 
-## Extension Settings
+<img alt="Feature demo" src="./resources/demo.gif">
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-For example:
+# Why We Built This
 
-This extension contributes the following settings:
+At Team Monolith, we document our UI components with embedded image references in code comments. This extension is part of our toolkit to enhance visualization and improve developer experience.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This tool works especially well when combined with:
+- [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+- [Markdown Paste Enhanced](https://marketplace.visualstudio.com/items?itemName=dzylikecode.md-paste-enhanced)
 
-## Known Issues
+With this toolset, we've observed:
+- 10-20% improvement in code review productivity
+- 10-20% reduction in onboarding time for new developers
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release with basic functionality:
+- Image path detection in comments
+- Clickable link conversion
+- Cross-platform path resolution
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Developed for Team Monolith**

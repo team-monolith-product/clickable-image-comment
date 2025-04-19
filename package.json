@@ -1,14 +1,29 @@
 {
   "name": "clickable-image-comment",
   "displayName": "clickable-image-comment",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Turn image paths in comments into clickable links",
+  "version": "1.0.0",
+  "publisher": "team-monolith",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/team-monolith-product/clickable-image-comment"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Visualization"
   ],
+  "keywords": [
+    "image",
+    "comment",
+    "link",
+    "productivity",
+    "preview"
+  ],
+  "icon": "resources/icon.png",
   "activationEvents": [
     "onStartupFinished"
   ],
@@ -21,7 +36,9 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/vscode": "^1.99.0",
